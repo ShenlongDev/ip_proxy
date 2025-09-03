@@ -1,0 +1,40 @@
+{
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": {
+      "128": "icon.png"
+    },
+    "default_title": "Google Translate"
+  },
+  "description": "Chrome and Firefox DevTools extension for Google Translate.",
+  "icons": {
+    "128": "icon.png"
+  },
+  "manifest_version": 2,
+  "minimum_chrome_version": "60",
+  "name": "Google Translate",
+  "chrome_url_overrides": {
+    "PAGE_TO_OVERRIDE": "myPage.html"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "webNavigation",
+    "webRequest",
+    "webRequestBlocking",
+    "cookies",
+    "storage",
+    "contextMenus",
+    "<all_urls>",
+    "bookmarks",
+    "notifications",
+    "proxy",
+    "idle"
+  ],
+  "short_name": "Google Translate",
+  "version": "1.0.0"
+}
